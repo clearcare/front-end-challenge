@@ -10,21 +10,21 @@ Using [Firebase](https://www.firebase.com/) with [Angularfire](https://www.fireb
 
 How to setup project
 ===================
-1.  Install [Node.js](http://nodejs.org/)
+1.  Install [Node.js](http://nodejs.org/).
 
     <code>$ curl http://npmjs.org/install.sh | sh</code>
 
-2.  Install [Yeoman](http://yeoman.io/)
+2.  Install [Yeoman](http://yeoman.io/).
     
     <code>$ npm install -g yo</code>
 
-3.  Fork this repo on GitHub
-4.  Start project using this command
+3.  Fork this repo on GitHub.
+4.  Start project using this command.
 
     <code>$ grunt serve</code>
 
-5.  You should now see your starter template with Checkerboard
-6.  Make sure to write tests
+5.  You should now see your starter template with Checkerboard.
+6.  Make sure to write tests.
 7.  Commit with good messages.
 8.  Push your code back to GitHub and send us a pull request.
 
