@@ -18,3 +18,6 @@ How to setup project
 6.  Make sure to write tests
 7.  Commit with good messages.
 8.  Push your code back to GitHub and send us a pull request.
+
+
+![alt text](https://raw.github.com/clearcare/front-end-challenge/master/screenshot.png "Template Image")
