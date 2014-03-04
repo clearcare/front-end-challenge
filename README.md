@@ -12,16 +12,16 @@ How to setup project
 ===================
 1.  Install [Node.js](http://nodejs.org/)
 
-    $ curl http://npmjs.org/install.sh | sh
+    <code>$ curl http://npmjs.org/install.sh | sh</code>
 
 2.  Install [Yeoman](http://yeoman.io/)
     
-    $ npm install -g yo
+    <code>$ npm install -g yo</code>
 
 3.  Fork this repo on GitHub
 4.  Start project using this command
 
-    $ grunt serve
+    <code>$ grunt serve</code>
 
 5.  You should now see your starter template with Checkerboard
 6.  Make sure to write tests
