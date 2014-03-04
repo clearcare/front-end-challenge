@@ -5,7 +5,7 @@ Using [AngularJS](http://angularjs.org/) create an 8x8 game of [Checkers](http:/
 
 Bonus Points
 ===================
-1. Using [Firebase](https://www.firebase.com/) with [Angularfire](https://www.firebase.com/quickstart/angularjs.html), both already in your app/bower_components and index.html, create a multiplayer turn based game of Checkers. For example, players login via GitHub, button supplied in the top left, players that are logged in via GitHub appear in a matchup panel and can create and join games. The server architecture can be accomplished with [Firebase](https://www.firebase.com/login/).
+Using [Firebase](https://www.firebase.com/) with [Angularfire](https://www.firebase.com/quickstart/angularjs.html), both already in your app/bower_components and index.html, create a multiplayer turn based game of Checkers. For example, players login via GitHub, button supplied in the top left, players that are logged in via GitHub appear in a matchup panel and can create and join games. The server architecture can be accomplished with [Firebase](https://www.firebase.com/login/).
 
 
 How to setup project
