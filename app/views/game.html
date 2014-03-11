@@ -1,13 +1,26 @@
 <div class="header">
-  <h3 class="text-muted pull-left">Checkers</h3>
-  <button type="button" ng-class="{'animated wobble': true}" ng-click="loginWithGithub()" class="pull-right btn btn-info"><i class="fa fa-github" style="margin-right: 5px;"></i>Log in with GitHub</button>
-  <div style="clear:both;"></div>
+    <h3 class="text-muted pull-left">Checkers</h3>
+    <button type="button" ng-class="{'animated wobble': true}" ng-click="loginWithGithub()" class="pull-right btn btn-info">
+        <i class="fa fa-github" style="margin-right: 5px;"></i>Log in with GitHub</button>
+
+    <button type="button" ng-click="resetGame()" class="pull-right btn btn-info new-game-button">
+        <i class="fa fa-refresh" style="margin-right: 5px;"></i>New Game</button>
+
+    <div style="clear:both;"></div>
 </div>
 
 <div class="checker-board" ng-class="{'animated fadeIn': true}">
-  <div class="checker pull-left board-tile" ng-class="{'black': tile.isBlack}" ng-repeat="(key, tile) in tiles"></div>
-  <div style="clear:both;"></div>
+    <div ng-repeat="row in rows">
+        <div ng-repeat="column in row" droppable ng-class="{'black': column.isBlack}" class="checker pull-left board-tile">
+            <div ng-if="column.piece">
+                <div draggable class="checker-piece checker-piece-{{column.piece}}"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear:both;"></div>
 </div>
+
 <div class="footer" style="margin-top: 20px;">
-  <p>♥ from the ClearCare team</p>
+    <p>♥ from the ClearCare team</p>
 </div>
