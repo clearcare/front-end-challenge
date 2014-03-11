@@ -10,7 +10,7 @@ Using [AngularJS](http://angularjs.org/) create an 8x8 game of [Checkers](http:/
 
 Here are some guidelines on different levels of solutions:
 
-* Level 1: New game button that puts pieces on the board and allows them to be moved
+* ~~Level 1: New game button that puts pieces on the board and allows them to be moved~~
 * Level 2: Enforcing that pieces can only be moved to legal spaces and determining when someone wins, no AI and you the player plays both colors.
 * Level 3: A multiplayer turn based game using [Firebase](https://www.firebase.com/)
 * Level 4: Implement AI so that the "computer" plays you.

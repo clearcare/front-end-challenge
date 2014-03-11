@@ -77,24 +77,58 @@ body {
     border-bottom: 0;
   }
 
-  .checker-board{
-      height: 402px;
-      width: 402px;
-      margin: auto auto;
-      border: 1px solid #aaa;
+  .new-game-button {
+    margin-right: 10px;
   }
 
-  .board-tile{
-      height: 50px;
-      width: 50px;
-      background-color: #f2f2f2;
+  .checker-board {
+    height: 402px;
+    width: 402px;
+    margin: auto auto;
+    border: 1px solid #aaa;
+
+    cursor: pointer;
+    position: relative;
   }
 
-  .black{
-      background-color: #000;
+  .board-tile {
+    height: 50px;
+    width: 50px;
+    background-color: #f2f2f2;
   }
 
-  .white{
-      background-color: #FFF;
+  .black {
+    background-color: #000;
+  }
+
+  .white {
+    background-color: #FFF;
+  }
+
+  .checker-piece {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 1px solid #333;
+
+    position: relative;
+  }
+
+  .checker-piece-red {
+    background: #d33;
+  }
+
+  .checker-piece-white {
+    background: #FDFDFD;
+  }
+
+  .checker-piece-red:hover {
+    box-shadow: inset 0 0 2px 1px #fff;
+  }
+
+  .checker-piece-white:hover {
+    box-shadow: inset 0 0 2px 1px #333;
   }
 }

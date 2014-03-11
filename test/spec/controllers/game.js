@@ -6,14 +6,16 @@ describe('Controller: GameCtrl', function () {
   beforeEach(module('gameApp'));
 
   var GameCtrl,
-    scope;
+    scope,
+    compile;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $compile) {
     scope = $rootScope.$new();
     GameCtrl = $controller('GameCtrl', {
       $scope: scope
     });
+    compile = $compile;
   }));
 
   it('should have 64 board tiles on the scope', function () {
@@ -45,5 +47,25 @@ describe('Controller: GameCtrl', function () {
     scope.resetGame();
     var tile = scope.tiles[63];
     expect(tile.isBlack).toBe(true);
+  });
+
+  it('should have 12 red pieces and 12 white pieces', function () {
+    scope.resetGame();
+
+    var redCount = 0;
+    var whiteCount = 0;
+
+    scope.rows.forEach(function (row) {
+      row.forEach(function (col) {
+        if (col.piece == 'red') {
+          redCount++;
+        } else if (col.piece == 'white') {
+          whiteCount++;
+        }
+      });
+    });
+
+    expect(redCount).toBe(12);
+    expect(whiteCount).toBe(12);
   });
 });
